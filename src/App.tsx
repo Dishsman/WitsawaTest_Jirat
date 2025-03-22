@@ -56,7 +56,7 @@ function App() {
       );
     } else {
       // Adding
-      const newCar = { ...values };
+      const newCar = { ...values, make_id: String(Date.now()) };//แก้ ID ซ้ำ
       setData([...data, newCar]);
     }
     setIsModalVisible(false);
